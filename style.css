@@ -11,12 +11,10 @@ body{
     background-color: #08AEEA;
     background-image: linear-gradient(309deg, #08AEEA 0%, #2AF598 100%);
     font-family: 'Montserrat', sans-serif;
-}
-
-header{
     height: 100vh;
     width: 100vw;
 }
+
 
 .navbar{
     position: absolute;
@@ -30,6 +28,14 @@ header{
 
 .navbar a{
     color:black;
+}
+
+.navbar .img-logo{
+    position: absolute;
+    width: 80px;
+    height: auto;
+    left: 270px;
+    top: 35px;
 }
 
 .navbar .logo{
@@ -55,6 +61,13 @@ header{
     color: rgba(12, 12, 12, 0.993);
     font-weight: 600;
 }
+.navbar .nav-link ul li.active a:hover{
+    font-weight: 600;
+}
+
+.navbar .nav-link ul li a:hover{
+    font-weight: 500;
+}
 
 .navbar .menu-hamburger
 {
@@ -67,7 +80,7 @@ header{
 
 
 
-@media screen  and (max-width :980px) {
+@media screen  and (max-width :1035px) {
 
     .navbar .menu-hamburger{
         display: block;
@@ -111,6 +124,12 @@ header{
         color: white;
     }
 
+}
+
+@media screen  and (max-width :435px){
+    .navbar .img-logo{
+        display: none;
+    }
 }
 
 
